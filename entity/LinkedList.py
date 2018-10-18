@@ -61,7 +61,7 @@ class LinkedList:
         return length
 
     def get_values(self):
-        node =self.head
+        node = self.head
         values = []
 
         while node != None:
