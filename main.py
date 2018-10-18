@@ -33,13 +33,11 @@ arr = []
 
 print(iter_list.current)
 
-arr.append(iter_list.__next__())
-arr.append(iter_list.__next__())
-arr.append(iter_list.__next__())
-arr.append(iter_list.__next__())
-arr.append(iter_list.__next__())
-# print(iter_list.__next__())
-# print(iter_list.__next__())
+arr.append(next(iter_list))
+arr.append(next(iter_list))
+arr.append(next(iter_list))
+arr.append(next(iter_list))
+arr.append(next(iter_list))
 
 arr_val = []
 
