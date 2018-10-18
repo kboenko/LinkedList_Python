@@ -9,7 +9,7 @@ class IteratedLinkedList(ll.LinkedList):
 
     def __next__(self):
         try:
-            if self.current.next == None:
+            if self.current.next is None:
                 raise si_ex.StopIterationException('The end of list is reached!')
             self.current = self.current.next
         except si_ex.StopIterationException as e:
@@ -18,7 +18,7 @@ class IteratedLinkedList(ll.LinkedList):
         return self.current
 
     def add_in_tail(self, node):
-        if self.head == None:
+        if self.head is None:
             self.head = node
             self.current = self.head
         else:
