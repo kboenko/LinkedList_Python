@@ -1,0 +1,2 @@
+class StopIterationException(Exception):
+    pass
