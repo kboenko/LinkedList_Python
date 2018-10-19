@@ -13,7 +13,8 @@ class IteratedLinkedList(ll.LinkedList):
                 raise si_ex.StopIterationException('The end of list is reached!')
             self.current = self.current.next
         except si_ex.StopIterationException as e:
-            self.__first__()
+            #self.__first__()
+            print('The end of list is reached!')
 
         return self.current
 
@@ -26,5 +27,5 @@ class IteratedLinkedList(ll.LinkedList):
 
         self.tail = node
 
-    def __first__(self):
+    def first(self):
         self.current = self.head
